@@ -5,5 +5,14 @@ class Post:
         self.title = title
         self.content = content
 
+    # Here we convert the post to a json format.
+    def json(self):
+        # We return a dictionary that represent the post.
+        return {
+            "title" : self.title,
+            "content" : self.content
+        }
+
+
 
 
